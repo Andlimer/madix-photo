@@ -25,11 +25,12 @@ body {
 }
 
 body {
+	padding-top: 58px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 
-	background-color: var(--bg-color-main);
-	color: var(--text-color-main);
+	background-color: var(--light-color);
+	color: var(--dark-color);
 }
 
 ul,
@@ -89,7 +90,9 @@ table {
 	width: 100%;
 	max-width: 1150px;
 	margin: 0 auto;
-	padding: 0 15px;
+	/* padding: 0 15px; */
+	padding-left: calc(15px + env(safe-area-inset-left));
+	padding-right: calc(15px + env(safe-area-inset-right));
 }
 
 .section {
@@ -224,15 +227,23 @@ table {
 	transform: scaleX(1);
 }
 
+#anchorHero,
+#anchorGallery,
+#anchorAbout {
+	scroll-margin-top: 58px;
+	/* Высота шапки */
+}
+
 .header {
-	position: -webkit-sticky;
-	/* Поддержка старых версий Safari */
-	/* position: sticky; */
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 10px 0;
+	/* padding: 10px 0; */
+	padding-top: calc(10px + env(safe-area-inset-top));
+	padding-left: env(safe-area-inset-left);
+	padding-right: env(safe-area-inset-right);
+	padding-bottom: 10px;
 	z-index: 999;
 	background-color: var(--light-color);
 	border-bottom: 2px solid var(--dark-color);
@@ -457,6 +468,10 @@ table {
 
 
 @media (max-width: 992px) {
+	body {
+		padding-top: calc(58px + env(safe-area-inset-top));
+	}
+
 	.burger-button {
 		display: block;
 	}
