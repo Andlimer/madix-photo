@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header__inner">
+			<a href="#" class="header__logo logo">Madix</a>
+			<nav class="header__menu menu">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="#" class="menu__link">Главная</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Галерея</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Обо мне</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Контакты</a>
+					</li>
+				</ul>
+				<button class="menu__button button" type="button">Написать</button>
+			</nav>
+			<button class="burger-button" type="button" aria-label="Открыть меню"></button>
+		</div>
+	</header>
+	<section class="hero">
+		<div class="container hero__inner">
+			<h1 class="hero__title">Роман Гречко</h1>
+			<span class="hero__subtitle">Фотограф авто-спорта</span>
+			<p class="hero__description">Делаю крутые фото со спортивных мероприятий и не только</p>
+			<div class="hero__socials socials">
+				<a href="#" class="socials__link">
+					<svg class="socials__icon">
+						<use href="./icons/sprite.svg#instagram"></use>
+					</svg>
+				</a>
+				<a href="#" class="socials__link">
+					<svg class="socials__icon">
+						<use href="./icons/sprite.svg#telegram"></use>
+					</svg>
+				</a>
+				<a href="#" class="socials__link">
+					<svg class="socials__icon">
+						<use href="./icons/sprite.svg#whatsapp"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="gallery section">
+		<div class="container">
+			<h2 class="gallery__title title">Галерея</h2>
+			<div class="gallery__controls">
+				<button class="gallery__button gallery__button--active button" data-filter="all" type="button">Все</button>
+				<button class="gallery__button button" data-filter="auto" type="button">Авто-спорт</button>
+				<button class="gallery__button button" data-filter="moto" type="button">Мото-спорт</button>
+				<button class="gallery__button button" data-filter="sport" type="button">Спорт</button>
+			</div>
+			<ul class="gallery__grid">
+				<li class="gallery__cell cell-1" data-category="moto">
+					<img src="./image/gallery/1.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-2" data-category="auto">
+					<img src="./image/gallery/2.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-3" data-category="auto">
+					<img src="./image/gallery/3.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-4" data-category="auto">
+					<img src="./image/gallery/4.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-5" data-category="auto">
+					<img src="./image/gallery/5.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-6" data-category="moto">
+					<img src="./image/gallery/6.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-7" data-category="auto">
+					<img src="./image/gallery/7.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-8" data-category="auto">
+					<img src="./image/gallery/8.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-9" data-category="auto">
+					<img src="./image/gallery/9.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-10" data-category="auto">
+					<img src="./image/gallery/10.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-11" data-category="auto">
+					<img src="./image/gallery/11.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-12" data-category="auto">
+					<img src="./image/gallery/12.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-13" data-category="auto">
+					<img src="./image/gallery/13.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-14" data-category="auto">
+					<img src="./image/gallery/14.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-15" data-category="moto">
+					<img src="./image/gallery/15.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-16" data-category="auto">
+					<img src="./image/gallery/16.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-17" data-category="auto">
+					<img src="./image/gallery/17.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-18" data-category="auto">
+					<img src="./image/gallery/18.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-19" data-category="auto">
+					<img src="./image/gallery/19.jpg" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__cell cell-20" data-category="auto">
+					<img src="./image/gallery/20.jpg" alt="" class="gallery__image">
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="about section">
+		<div class="about__inner container">
+
+			<div class="about__content">
+				<h2 class="about__title title">Обо мне</h2>
+				<div class="about__text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore aperiam tempora porro assumenda
+						saepe, accusantium eveniet veniam nemo enim minima consectetur! Earum accusamus tempore voluptates dolorum
+						enim veniam maxime?</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore aperiam tempora porro assumenda
+						saepe, accusantium eveniet veniam nemo enim minima consectetur! Earum accusamus tempore voluptates dolorum
+						enim veniam maxime?</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore aperiam tempora porro assumenda
+						saepe, accusantium eveniet veniam nemo enim minima consectetur! Earum accusamus tempore voluptates dolorum
+						enim veniam maxime?</p>
+				</div>
+			</div>
+			<div class="about__image">
+				<img src="./image/photo_2026-10-13_08-53-52.jpg" alt="" class="about__img">
+			</div>
+		</div>
+	</section>
+	<section class="contacts section">
+		<div class="container">
+			<h2 class="contacts__title title">Контакты</h2>
+			<form action="#" class="contacts__form form">
+
+				<div class="form__group">
+					<label for="userName" class="form__label">Ваше имя</label>
+					<input type="text" id="userName" name="name" placeholder="Роман" required class="form__input">
+					<span class="form__error" id="nameError"></span>
+				</div>
+
+				<div class="form__group">
+					<label for="userPhone" class="form__label">Номер телефона</label>
+					<input type="tell" id="userPhone" name="phone" placeholder="+7 (999) 999-99-99" required class="form__input">
+					<span class="form__error" id="phoneError"></span>
+				</div>
+
+				<div class="form__group">
+					<label for="userMessage" class="form__label">Ваше сообщение</label>
+					<textarea id="userMessage" name="message" class="form__input form__input--textarea"
+						placeholder="Напишите, какой проект вы хотите обсудить..." rows="4"></textarea>
+					<span class="form__error" id="nameError"></span>
+				</div>
+
+				<button class="form__button button">Отправить</button>
+
+			</form>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer__inner container">
+
+			<div class="footer__contacts">
+				<a href="mailto:photo@example.com" class="footer__link">photo@example.com</a>
+				<a href="tel:+79242670193" class="footer__link">+7 (924) 267-01-93</a>
+			</div>
+
+			<div class="footer__copyright">
+				<p class="footer__text">
+					&copy; <span id="currentYear" class="footer__year"></span> Madix. Все права защищены.
+				</p>
+				<p class="footer__developer">
+					Сайт разработан: <a href="#" class="footer__link">Andlimer</a>
+				</p>
+			</div>
+
+			<div class="footer__socials socials">
+				<a href="#" class="socials__link">
+					<svg class="socials__icon">
+						<use href="./icons/sprite.svg#instagram"></use>
+					</svg>
+				</a>
+				<a href="#" class="socials__link" aria-label="Telegram">
+					<svg class="socials__icon">
+						<use href="./icons/sprite.svg#telegram"></use>
+					</svg>
+				</a>
+				<a href="#" class="socials__link">
+					<svg class="socials__icon">
+						<use href="./icons/sprite.svg#whatsapp"></use>
+					</svg>
+				</a>
+			</div>
+
+		</div>
+	</footer>
+	<script src="./script.js"></script>
+</body>
+
+</html>
